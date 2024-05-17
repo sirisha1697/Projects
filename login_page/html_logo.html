@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    /*styling for body*/
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="checkbox"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color:white;
+    }
+    /*styling for inputs*/
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    
+    }
+    /*styling for inputs*/
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    /*styling for lables*/
+    label {
+        margin-bottom: 10px;
+        display: block;
+    }
+    /*styling for form*/
+    form{
+        color:white;
+    }
+</style>
+</head>
+<body style="background-color:purple;">
+    <center><h1 style="color:white">SIGN UP</h1></center>
+
+<form action="/submit_registration" method="post">
+                                                                                  
+    <!--it indicates the creating of text box which is used to write the name-->
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Username" required>  
+    <!--it indicates the creating of text box which is used to write the email-->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="email" required>
+    <!--it indicates the creating of text box which is used to write the name password-->
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="password">
+    <!--it indicates checkbox-->
+    <input type="checkbox" id="communicationConsent" name="communicationConsent">
+    <label for="communicationConsent">I agree to receive communications</label>
+    
+    <input type="submit" value="SUBMIT">
+</form>
+
+</body>
+</html>
